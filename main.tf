@@ -1,6 +1,28 @@
+#terraform {
+#  required_version = ">= 0.12.0"
+#}
+
 terraform {
-  required_version = ">= 0.12.0"
+ required_providers {
+  azurerm = {
+    source = "hashicorp/azurerm"
+    version = ">=2.26"
+   }
+  }
+ 
+ backend "remote {
+  hostname = "app.terrafprm.io"
+  organization = "WPPITPOC"
+
+  workspaces {
+   name = "vmss"
+  }
+ }
 }
+
+ provider "azurerm" {
+  features {}
+} 
 
 resource "azurerm_resource_group" "resource_group" {
   name     = "${var.application}-${var.environment}"
