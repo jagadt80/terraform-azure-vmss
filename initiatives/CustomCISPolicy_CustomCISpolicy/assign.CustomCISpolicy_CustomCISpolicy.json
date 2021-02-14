@@ -1,0 +1,29 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "properties": {
+  "displayName": "CustomCISpolicy",
+  "policyDefinitionId": "/providers/Microsoft.Management/managementgroups/Core/providers/Microsoft.Authorization/policySetDefinitions/CustomCISpolicy",
+  "scope": "/providers/Microsoft.Management/managementGroups/Core",
+  "parameters": {},
+  "metadata": {
+   "assignedBy": "landingzone automation",
+   "createdBy": "d4920238-2483-41ac-a47a-eca1101a6c10",
+   "createdOn": "2020-11-23T18:04:48.6658934Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "enforcementMode": "Default"
+ },
+ "identity": {
+  "principalId": "0f5ff385-1dd3-4bd2-a1f1-080894de2d76",
+  "tenantId": "3d8820e2-f4eb-46a2-8253-82539d7cc066",
+  "type": "SystemAssigned"
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/Core/providers/Microsoft.Authorization/policyAssignments/CustomCISpolicy",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "CustomCISpolicy",
+ "location": "eastus"
+}
